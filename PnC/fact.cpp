@@ -24,7 +24,7 @@ void init() {
         invFact[i] = invFact[i + 1] * (i + 1) % MOD;
 }
 
-a^(-1) = a^(MOD - 2) % MOD; 
+// a^(-1) = a^(MOD - 2) % MOD; 
 long long nCr(int n, int r) {
     if (r > n) return 0;
     return fact[n] * invFact[r] % MOD * invFact[n - r] % MOD;
